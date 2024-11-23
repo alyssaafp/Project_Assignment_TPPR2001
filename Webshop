@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Frank+Ruhl+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+  <header>
+    <button class="burger-menu" aria-label="Open menu">☰</button>
+    <h1 class="logo">FRAM</h1>
+    <div class="cart-icon" aria-label="Cart">🛒</div>
+  </header>
+
+ <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <img src="https://i.ibb.co/CVTnjFy/markus-spiske-Wc-Lz-VLb-UP5g-unsplash.jpg" alt="Scenic mountain view" class="hero-image">
+                <div class="hero-text">
+                    <h1 class="hero-logo">FRAM</h1>
+                    <p class="hero-tagline">HOME DELIVERY FROM YOUR LOCAL FARMS</p>
+                </div>
+            </div>
+        </section>
+
+    
