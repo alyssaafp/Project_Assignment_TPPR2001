@@ -27,4 +27,30 @@
             </div>
         </section>
 
+  <!-- Seasonal Section -->
+        <section class="seasonal-section">
+            <div class="container">
+                <!-- Left Box: Seasonal Selection -->
+                <div class="box">
+                    <h2 class="section-header">Shop Our Seasonal Selection</h2>
+                    <p class="section-subheader">Updated every week</p>
+                    <img src="https://i.ibb.co/bdHqHzN/nina-luong-dp06f70-Eyvc-unsplash.jpg" alt="Seasonal Selection" class="section-image">
+                    <p class="section-body">New produce is added continuously as time goes by and the seasons change.</p>
+                    <button class="cta-button browse-button">Browse our selection</button>
+                </div>
+
+                <!-- Right Box: Ask Us About Anything -->
+                <div class="box">
+                    <h2 class="section-header">Ask Us About Anything</h2>
+                    <p class="section-subheader">All your questions answered</p>
+                    <img src="https://i.ibb.co/njLTG4r/rebecca-ritchie-NWrp3-FK68y-E-unsplash.jpg" alt="Ask Us Anything" class="section-image">
+                    <p class="section-body">New produce is added continuously as time goes by and the seasons change.</p>
+                    <button class="cta-button chat-button">Go to chat</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
     
