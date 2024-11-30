@@ -10,7 +10,7 @@ Overview:
 
 Challenges: 
 
-- Keeping the logo entered and icons at the right places 
+- Keeping the logo centered and icons at the right places 
 - Making it look visually appealing on both big and small screens. 
 
 
