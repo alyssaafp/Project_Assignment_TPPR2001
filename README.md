@@ -12,16 +12,17 @@ Challenges:
 
 - Keeping the logo centered and icons at the right places 
 - Making it look visually appealing on both big and small screens. 
-
+- Stock link aligned under the step description
+- 
 
 Fixes:
 
 - Used flexbox to align things better
 - Added media queries to stack things properly on smaller screens. 
-
+- Moved the html for stock link inside the class step-description-container 
 
 
 Next actions 
 
-- Continue with “How it works section
+- Continue with Popular produce section, including images (3).
 - 
