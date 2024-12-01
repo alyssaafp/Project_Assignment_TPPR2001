@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+    background-color: #F7F2DE;
+    color: #0B0A08;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center; /* Logo in the middle */
+    align-items: center;
+    padding: 0px 5px;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.burger-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; /* Burger on upper left of screen */
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Cart icon on upper right of screen */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Burger Icon Hover */
+.burger-menu:hover {
+    opacity: 0.4; /* 40% opacity */
+    transition: opacity 0.3s ease;
+}
+
+/* Cart Icon Hover */
+.cart-icon:hover {
+    opacity: 0.4; /* 40% opacity */
+    transition: opacity 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-logo {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 200px;
+    margin-top: 20px;
+}
+
+.hero-tagline {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Seasonal Section */
+.seasonal-section {
+    background-color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.seasonal-section .container {
+    display: flex;
+    justify-content: space-between; /* Split into two sides */
+    align-items: stretch; 
+    gap: 0; 
+    padding: 20px 0;
+    position: relative;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: space-between; /* Evenly distributes content */
+    align-items: center; /* To center content horizontally */
+    text-align: center;
+    position: relative;
+}
+
+.box:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background-color: #000000; /* Vertical divider between boxes */
+    height: 100%;
+}
+
+/* Section Header */
+.section-header {
+    font-family: 'Arimo', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 80px; /* More space on each side */
+    letter-spacing: -1.5px; /* Less spacing between letters */
+    margin-bottom: 0px;
+}
+
+/* Section Subheader */
+.section-subheader {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+/* Section Body */
+.section-body {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Section Image */
+.section-image {
+    width: 448px; 
+    height: 327px; 
+    object-fit: cover; /* For images not to be distorted*/
+    border-radius: 16px;
+    margin-bottom: 15px; 
+}
+
+/* Button Styling */
+.cta-button {
+    background-color: #DC4131;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 60px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: auto; /* Button width adjusts to content */
+    display: inline-block; /* Prevents the button from stretching */
+}
+
+.cta-button:hover {
+    background-color: #AE2E21;
+}
+
+
+/* How It Works Section */
+.how-it-works {
+    display: flex;
+    background-color: #F7F2DE;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.how-it-works .container {
+    display: flex;
+    justify-content: space-between; /* Split it into two sides */
+    align-items: stretch; /* Match heights of both columns */
+    gap: 0;
+}
+
+/* Left Column (Title) */
+.left-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-right: 1px solid #000000; /* Vertical divider line */
+}
+
+.left-column-title {
+    font-family: 'Arimo', sans-serif;
+    font-size: 36px; /* bigger screen */
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+/* Right Column (Steps) */
+.right-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Step Box */
+.step {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000000;
+    padding: 20px 0;
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+/* Step Content */
+.step-content {
+    display: grid; /* Grid layout */
+    grid-template-columns: 1fr 2fr; /* Title and description-container*/
+    gap: 20px; /* Space between title and description */
+    align-items: start; /* Align items at the top */
+}
+
+/* Step Title */
+.step-title {
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #0B0A08;
+    white-space: nowrap; 
+    text-align: left;
+}
+
+/* Description Container */
+.step-description-container {
+    display: flex;
+    flex-direction: column; /* To stack description and stock link */
+    gap: 10px; 
+    margin: 0; 
+}
+
+/* Step Description */
+.step-description {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0; 
+}
+
+/* Stock Link */
+.stock-link {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: underline;
+    opacity: 0.7;
+    margin-top: 10px; 
+    display: block; /* So it appears below the description */
+    text-align: left;
+}
+
+.stock-link:hover {
+    opacity: 1;
+}
+
+
+
+/* Responsive Layout (390px and Smaller) */
+@media screen and (max-width: 390px) {
+    .hero-logo {
+        font-size: 75px;
+        margin-top: 30px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .burger-menu,
+    .cart-icon {
+        font-size: 20px;
+    }
+
+    .header {
+        padding: 5px 10px;
+    }
+
+    .hero-tagline {
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+    .seasonal-section .container,
+    .how-it-works .container {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .box {
+        border-right: none; /* Remove vertical divider */
+        border-bottom: 1px solid #000000; /* Add horizontal divider */
+    }
+
+    .box:last-child {
+        border-bottom: none; 
+    }
+
+    
+    .left-column {
+        border-right: none; /* Remove vertical divider for mobile */
+        border-bottom: 1px solid #000000; /* Add horizontal divider */
+        text-align: center;
+    }
+
+    .section-header {
+        font-size: 24px;
+    }
+
+    .section-subheader {
+        font-size: 16px;
+    }
+
+    .section-body {
+        font-size: 16px;
+    }
+  
+      .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .section-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .step-content {
+        grid-template-columns: 1fr; /* Stack title and description vertically */
+        gap: 10px;
+    }
+
+    .step-title {
+        font-size: 18px; /* For smaller screens */
+    }
+
+    .step-description-container {
+        gap: 8px; /* Spacing for mobile */
+    }
+
+    .step-description {
+        font-size: 14px; 
+    }
+
+    .stock-link {
+        font-size: 14px;
+    }
+}
+
