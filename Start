@@ -49,6 +49,7 @@
                 </div>
             </div>
         </section>
+
         <!--How it Works Section-->
         <section class="how-it-works">
             <div class="container">
@@ -106,6 +107,57 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!— Popular Produce Section—>
+        <section class="popular-produce">
+   		    <h2 class="section-title">Popular Produce</h2>
+            <div class="carousel">
+                <!-- Product 1 -->
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="https://i.ibb.co/QrdvrWq/lukasz-rawa-HB-MVt-HVMLc-unsplash.jpg" alt="Oats" class="produce-image">
+                        <button class="add-to-basket">Add to basket ↑</button>
+                    </div>
+                    <div class="produce-info">
+                        <div class="produce-details">
+                            <span class="produce-name">Oats</span>
+                            <span class="produce-price">48 kr/kg</span>
+                        </div>
+                        <span class="produce-weight">1 kg</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="https://i.ibb.co/mqggKVw/goh-rhy-yan-CCx-WLAx0qmk-unsplash.jpg" alt="Red Onions" class="produce-image">
+                        <button class="add-to-basket">Add to basket ↑</button>
+                    </div>
+                    <div class="produce-info">
+                        <div class="produce-details">
+                            <span class="produce-name">Red Onions</span>
+                            <span class="produce-price">48 kr/kg</span>
+                        </div>
+                        <span class="produce-weight">0.5kg</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="https://i.ibb.co/rpgHDQJ/matthew-pilachowski-w1e-AFy-BLh-LM-unsplash.jpg" alt="Garlic" class="produce-image">
+                        <button class="add-to-basket">Add to basket ↑</button>
+                    </div>
+                    <div class="produce-info">
+                        <div class="produce-details">
+                            <span class="produce-name">Garlic</span>
+                            <span class="produce-price">48 kr/kg</span>
+                        </div>
+                        <span class="produce-weight">0.2 kg</span>
                     </div>
                 </div>
             </div>
