@@ -5,7 +5,8 @@ Overview:
 - Visualises a landing page that shows the logo, information on how it works and images of some products. 
 - Shows a clean layout that applies to big and smaller screens. 
 - Buttons are interactive. 
-- Fonts as follows are Arimo and Frank Ruhl and used accordingly. 
+- Fonts as follows are Arimo and Frank Ruhl and used accordingly.
+- Current HTML now has Popular Produce Section and Contact Form 
 
 
 Challenges: 
@@ -13,7 +14,7 @@ Challenges:
 - Keeping the logo centered and icons at the right places 
 - Making it look visually appealing on both big and small screens. 
 - Stock link aligned under the step description
-- 
+- Add to basket button inside the Product image 
 
 Fixes:
 
@@ -24,5 +25,5 @@ Fixes:
 
 Next actions 
 
-- Continue with Popular produce section, including images (3).
+- Working on CSS for Popular Produce Section then Contact Form 
 - 
