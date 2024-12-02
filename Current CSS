@@ -290,8 +290,8 @@ header {
 
 
 
-/* Responsive Layout (390px and Smaller) */
-@media screen and (max-width: 390px) {
+/* Responsive Layout (393px and Smaller) */
+@media screen and (max-width: 393px) {
     .hero-logo {
         font-size: 75px;
         margin-top: 30px;
