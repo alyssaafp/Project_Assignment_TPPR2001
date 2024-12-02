@@ -162,6 +162,21 @@
                 </div>
             </div>
         </section>
+
+        <--! Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <h1 class="form-logo>FRAM</h1>
+                <h2 class="form-title">STAY UPDATED</h2>
+                <p class="form-description">Sign up for our newsletter and get the latest updates.</p>
+                <form id="contactForm">
+                    <input type="text" id="firstName" placeholder="First name" class="form-input">
+                    <input type="email" id="email" placeholder="E-mail address" class="form-input">
+                    <button type="submit" class="form-button">Send</button>
+                </form>
+                <p id="form-message" class="form-message"></p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
