@@ -12,5 +12,5 @@
     <header>
         <button class="burger-menu" aria-label="Open menu">☰</button>
         <h1 class="logo">FRAM</h1>
-        <div class="cart-icon" aria-label="Cart">🛒</div>
+        <div class="cart-icon" aria-label="Cart">0</div>
     </header>
