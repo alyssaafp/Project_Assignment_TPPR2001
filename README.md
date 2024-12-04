@@ -6,7 +6,8 @@ Overview:
 - Shows a clean layout that applies to big and smaller screens. 
 - Buttons are interactive. 
 - Fonts as follows are Arimo and Frank Ruhl and used accordingly.
-- Current HTML now has Popular Produce Section and Contact Form 
+- Renamed Files for easy checking
+- Created a separate HTML file for the Product Page 
 
 
 Challenges: 
@@ -14,7 +15,8 @@ Challenges:
 - Keeping the logo centered and icons at the right places 
 - Making it look visually appealing on both big and small screens. 
 - Stock link aligned under the step description
-- Add to basket button inside the Product image 
+- Add to basket button inside the Product image
+  
 
 Fixes:
 
@@ -23,7 +25,7 @@ Fixes:
 - Moved the html for stock link inside the class step-description-container 
 
 
-Next actions 
+Actions | Next actions 
 
-- Working on CSS for Popular Produce Section then Contact Form 
+-  Continue with Product Page HTML + CSS Properties 
 - 
