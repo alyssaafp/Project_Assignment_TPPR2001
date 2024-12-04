@@ -13,7 +13,7 @@ body {
 
 /* Header */
 header {
-    background-color: #FFFFFF;
+    background-color: #F7F2DE;
     display: flex;
     justify-content: center; /* Logo in the middle */
     align-items: center;
@@ -293,6 +293,223 @@ header {
 }
 
 
+/* Popular Produce Section */
+.popular-produce {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Arimo', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    color: #0B0A08;
+    margin-bottom: 20px;
+}
+
+/* Carousel/Grid for Larger Screens */
+.carousel {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; /* Gap between images */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.carousel-item {
+    flex: 1;
+    max-width: calc(33.33% - 10px); /* Three images per row */
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+
+/* Image */
+.image-container {
+    position: relative; 
+    display: inline-block; /*  Image and button share the same space */
+}
+
+.produce-image {
+    width: 100%;
+    height: 432px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Add to basket button inside Image  */
+.add-to-basket {
+    position: absolute;
+    bottom: 10px; /* Inside the image at the bottom-right */
+    right: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 152px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    opacity: 0.85;
+}
+
+.add-to-basket:hover {
+    opacity: 1;
+}
+
+/* Info Section Below  Image */
+.produce-info {
+    margin-top: 10px;
+    padding: 0 10px;
+    font-family: 'Arimo', sans-serif;
+    color: #0B0A08;
+}
+
+/* Product Name and Price on the Same Line */
+.produce-details {
+    display: flex;
+    justify-content: space-between; /* Name on left, price on right */
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+.produce-name {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.produce-price {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: right;
+}
+
+/* Product Weight Below Name and Price */
+.produce-weight {
+    font-size: 20px;
+    text-align: left; 
+    display: block; 
+    margin-top: 5px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: #DC4131; /* Section background color */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact-form-section .container {
+    max-width: 600px; /
+    margin: 0 60px; 
+    text-align: left; /* Align text to the left */
+}
+
+/* Logo Styling */
+.form-logo {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 48px;
+    font-weight: normal;
+    color: #FFFFFF;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.form-logo::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust the space below the text */
+    left: 0;
+    right: 0;
+    width: 95vw; 
+    height: 1px; /* Thickness of  border */
+    background-color: #FFFFFF;
+    z-index: 0; /* So it doesn't overlap the text */
+}
+
+
+/* Title Styling */
+.form-title {
+    font-family: 'Arimo', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+/* Description Styling */
+.form-description {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+.form-input {
+    width: 460px; 
+    height: 44px;
+    padding: 10px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.form-button {
+    width: 460px;
+    height: 44px;
+    background-color: #E1EAF0;
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.form-button:hover {
+    opacity: 1;
+}
+
+/* Form Message Styling */
+.form-message {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+
 
 /* Responsive Layout (393px and Smaller) */
 @media screen and (max-width: 393px) {
@@ -381,5 +598,78 @@ header {
     .stock-link {
         font-size: 14px;
     }
+
+        .carousel {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; 
+        gap: 10px;
+    }
+
+    .carousel-item {
+        min-width: 100%; /* Show one image at a time */
+        max-width: 100%;
+        flex: 0 0 auto; /* Prevent resizing */
+        scroll-snap-align: start; 
+        height: auto;
+    }
+
+    .produce-image {
+        width: 250px; /* Mobile dimensions */
+        height: 321px;
+        border-radius: 16px;
+        margin: 0 auto;
+    }
+
+    .add-to-basket {
+        width: 152px; 
+        height: 40px;
+        font-size: 14px;
+    }
+
+    
+    .produce-info {
+        margin-top: 10px;
+    }
+
+    .produce-name {
+        font-size: 20px; 
+    }
+
+    .produce-price {
+        font-size: 20px; 
+    }
+
+    .produce-weight {
+        font-size: 18px; /* Adjust font size */
+    }
+  
+  .contact-form-section {
+    background-color: #DC4131; /* Section background color */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
+  
+    .form-logo {
+        font-size: 36px;
+    }
+
+    .form-title {
+        font-size: 24px; /* Adjust title font size */
+    }
+
+    .form-description {
+        font-size: 16px; /* Adjust description font size */
+    }
+
+    .form-input,
+    .form-button {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%;
+    }
+}
+
+
 
