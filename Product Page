@@ -14,3 +14,95 @@
         <h1 class="logo">FRAM</h1>
         <div class="cart-icon" aria-label="Cart">0</div>
     </header>
+
+    <main>
+        <!-- Product Intro Section -->
+        <section class="product-intro">
+            <h1 class="product-title">Produce</h1>
+            <p class="product-description">
+                Explore our selection of seasonal produce, sourced directly from local farms to ensure peak freshness and quality. Every item is chosen with care, supporting sustainable practices and bringing the best of the harvest to your table.
+            </p>
+        </section>
+
+        <!-- Product Listing Section-->
+        <section class="product-list">
+            <div class="product-grid">
+                <!-- First Row-->
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="https://i.ibb.co/QrdvrWq/lukasz-rawa-HB-MVt-HVMLc-unsplash.jpg" alt="Oats" class="product-image">
+                        <button class="add-to-basket">Add to basket ↑</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-details>
+                            <span class="product-name">Oats</span>
+                            <span class="product-price">16 kr/kg</span>
+                        </div>
+                        <span class="product-weight">1 kg</span>
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="https://i.ibb.co/mqggKVw/goh-rhy-yan-CCx-WLAx0qmk-unsplash.jpg" alt="Red Onions" class="product-image">
+                    	<button class="add-to-basket">Add to basket ↑</button>
+                	</div>
+                    <div class="product-info">
+                        <div class="product-details>
+                            <span class="product-name">Red Onionss</span>
+                            <span class="product-price">45 kr/kg</span>
+                        </div>
+                        <span class="product-weight">1 kg</span>
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="https://i.ibb.co/rpgHDQJ/matthew-pilachowski-w1e-AFy-BLh-LM-unsplash.jpg" alt="Garlic" class="product-image">
+                        <button class="add-to-basket">Add to basket ↑</button>
+                	</div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <span class="product-name">Garlics</span>
+                            <span class="product-price">38 kr</span>
+                        </div>
+                        <span class="product-weight">0.2 kg</span>
+                    </div>
+                </div>
+    
+                <!-- Second Row -->
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src= "https://i.ibb.co/VmnSmk8/rodrigo-dos-reis-h3-Akzbox-K4-Q-unsplash.jpg" alt="Potato" class="product-image">
+                        <button class="add-to-basket">Add to basket ↑</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <span class="product-name">Potato</span>
+                            <span class="product-price">32 kr/kg</span>
+                        </div>
+                        <span class="product-weight">1 kg</span>
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="https://i.ibb.co/fH7kTYN/goh-rhy-yan-w-UBhu3-GXIg0-unsplash.jpg" alt="Carrots" class="product-image">
+                        <button class="add-to-basket">Add to basket ↑</button>
+                    </div>
+                    
+                    <div class="product-info">
+                        <div class="product-details">
+                            <span class="product-name">Carrots</span>
+                            <span class="product-price">48 kr/kg</span>
+                        </div>
+                        <span class="product-weight">1 kg</span>
+                    </div>
+                </div>               
+            </div>      
+        </section>
+    </main>
+</body>
+</html>
+
+    
