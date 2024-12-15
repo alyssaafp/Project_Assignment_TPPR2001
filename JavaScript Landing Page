@@ -1,1 +1,25 @@
+// Burger Menu Popup
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const popup = document.getElementById('popup');
+    const closePopupButton = document.querySelector('.close-popup-button');
+
+    // Show popup when burger menu is clicked
+    burgerMenu.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Show popup
+    });
+
+    // Close popup when the "X" button is clicked
+    closePopupButton.addEventListener('click', () => {
+        popup.style.display = 'none'; // Hide popup
+    });
+
+    // Close popup when clicking outside the content area
+    popup.addEventListener('click', (event) => {
+        if (event.target === popup) {
+            popup.style.display = 'none'; // Hide popup
+        }
+    });
+});
+
 
