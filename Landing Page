@@ -163,7 +163,7 @@
             </div>
         </section>
 
-        <--! Contact Form Section -->
+        <!-- Contact Form Section -->
         <section class="contact-form-section">
             <div class="container">
                 <h1 class="form-logo>FRAM</h1>
@@ -177,7 +177,22 @@
                 <p id="form-message" class="form-message"></p>
             </div>
         </section>
+
+        <!-- PopUp Menu -->
+        <div class="popup-overlay" id="popup">
+            <div class="popup-content">
+                <button class="close-popup-button" aria-label="Close popup">X</button>
+                <h1 class="popup-logo">FRAM</h1>
+                <hr class="popup-divider">
+                <div class="popup-text">
+                    <p>Products</p>
+                    <p>Chat</p>
+                    <p class="popup-checkout">Checkout</p>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
 
