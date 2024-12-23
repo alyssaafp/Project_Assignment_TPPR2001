@@ -101,7 +101,45 @@
                 </div>               
             </div>      
         </section>
+
+        <!-- Partnering Farms Section -->
+        <section class="see-our-farms">
+            <div class="farm-container">
+                <!-- Left Column Title -->
+                <div class="column-left">
+                    <h2 class="column-left-title">See Our Partnering Farms</h2>
+                </div>
+
+                <!-- Right Column Maps -->
+                <div class="column-right">
+                    <div id="map">
+                        <div class="placeholder">
+                            <p>Use your API key to see the map.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <h1 class="form-logo">FRAM</h1>
+                <h2 class="form-title">STAY UPDATED</h2>
+                <p class="form-description">Sign up for our newsletter and get the latest updates.</p>
+                <form id="contactForm">
+                    <input type="text" id="firstName" placeholder="First name" class="form-input">
+                    <input type="email" id="email" placeholder="E-mail address" class="form-input">
+                    <button type="submit" class="form-button">Send</button>
+                </form>
+                <p id="form-message" class="form-message"></p>
+            </div>
+        </section>
     </main>
+
+    <!-- Map to use own API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=OWN_API_KEY_HERE&callback=initMap"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
