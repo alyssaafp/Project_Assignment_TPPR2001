@@ -156,3 +156,305 @@ header {
     margin-top: 5px;
 }
 
+/* Partnering Farms Section */
+.see-our-farms {
+    display: flex;
+    background-color: #F7F2DE;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.farm-container {
+    display: flex;
+    justify-content: space-between; /* Keep left and right columns separate */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    height: 100%;
+}
+
+/* Left Column */
+.column-left {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    border-right: 1px solid #000; 
+    height: 100vh; /* Full  height */
+    box-sizing: border-box; /* To not affect padding from total height */
+}
+
+.column-left-title {
+    font-family: 'Arimo', sans-serif;
+    font-size: 36px; 
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+/* Right Column */
+.column-right {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px 60px;
+}
+
+/* Map */
+#map {
+    position: relative;
+    width: 745px; 
+    height: 478px; 
+    border-radius: 16px; 
+    background-color: #D3F8E1;
+    margin: 0 auto;
+}
+
+.placeholder {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: #DC4131; /
+    padding: 40px 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact-form-section .container {
+    max-width: 600px;
+    margin: 0 60px;
+    text-align: left; /* To set text to the left */
+}
+
+/* Logo Styling */
+.form-logo {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 48px;
+    font-weight: normal;
+    color: #FFFFFF;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.form-logo::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust the space below the text */
+    left: 0;
+    right: 0;
+    width: 95vw; 
+    height: 1px; /* Thickness of border */
+    background-color: #FFFFFF;
+    z-index: 0; /* So it doesn't overlap the text */
+}
+
+/* Title  */
+.form-title {
+    font-family: 'Arimo', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+/* Description  */
+.form-description {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/* Form  */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+.form-input {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 460px; /* Maintain max width for larger screens */
+    height: 44px;
+    padding: 10px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button  */
+.form-button {
+    width: 100%; 
+    max-width: 480px; 
+    height: 44px;
+    background-color: #E1EAF0;
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.form-button:hover {
+    opacity: 1;
+}
+
+/* Form Message Styling */
+.form-message {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+/* Responsive Design for 393px and Below */
+@media screen and (max-width: 393px) {
+  
+    .product-title {
+        font-size: 28px;
+    }
+   .product-description {
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px; 
+        padding: 0 16px; 
+        margin-top: 0px; 
+        max-width: 100%; 
+        text-align: left; 
+        line-height: 1.5; 
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* One item per row */
+    }
+
+    .product-card {
+        width: 100%; 
+        border-radius: 16px;
+    }
+
+    .image-container {
+        height: 279px; 
+    }
+  
+    /* See-our-farms container */
+    .see-our-farms {
+        flex-direction: column; /* Stack vertically */
+        padding: 20px; 
+        justify-content: center;
+        align-items: center; 
+    }
+
+    /* Farm container Adjustments */
+    .farm-container {
+        flex-direction: column; 
+        gap: 15px; 
+        align-items: center; 
+        justify-content: center;
+        padding: 10px; 
+    }
+
+    /* Left Column Adjustments */
+    .column-left {
+        padding: 10px; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        border-right: none; /* To remove vertical border */
+        height: auto; 
+    }
+
+    .column-left-title {
+        font-size: 24px; 
+        text-align: center; 
+        border-bottom: 1px solid #000; 
+        padding-bottom: 60px; /* Space between text and line */
+        margin-bottom: 0px; 
+    }
+
+    /* Map Adjustments */
+    #map {
+        width: 340px; 
+        height: 459px; 
+        border-radius: 16px; 
+        margin: 0 auto; 
+        margin-top: 15px; 
+        position: relative; 
+    }
+
+    /* Placeholder Adjustments */
+    .placeholder {
+        font-size: 16px; /* Smaller font size for smaller screens */
+        color: #666; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+    }
+  
+  .contact-form-section {
+    background-color: #DC4131; 
+    padding: 20px 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+  
+    .container {
+    padding: 0px ;
+      
+    }
+  
+    .form-logo {
+        font-size: 36px;
+    }
+
+    .form-title {
+        font-size: 24px; 
+    }
+
+    .form-description {
+        font-size: 16px; 
+    }
+
+    .form-input {
+        width: 270px;
+        height: 24px;
+    }
+        
+    .form-button {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%;
+    }
+}
+
