@@ -339,6 +339,74 @@ form {
     margin-top: 10px;
 }
 
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: none; /* Hidden */
+    justify-content: flex-start; /* Align popup to the top */
+    align-items: flex-start; /* Popup on upper left */
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    width: 475px;
+    height: 919px;
+    background-color: #008F51; 
+    color: black;
+    Text-transform: uppercase;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    padding: 20px;
+}
+
+/* Close Button */
+.close-popup-button {
+    position: absolute;
+    top: 28px; /* to align with logo */
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+    cursor: pointer;
+}
+
+/* Popup Logo */
+.popup-logo {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Divider */
+.popup-divider {
+    border: none;
+    border-top: 1px solid black;
+    margin: 10px 0;
+}
+
+/* Popup Text */
+.popup-text p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin: 60px 0;
+}
+
+/* Checkout text alignment */
+.popup-checkout {
+    margin-top: auto;
+}
+
 /* Responsive Design for 393px and Below */
 @media screen and (max-width: 393px) {
   
@@ -455,6 +523,35 @@ form {
     .form-button {
         width: 100%; /* Full width on smaller screens */
         max-width: 100%;
+    }
+
+/* PopUp Menu */
+  
+    .popup-overlay {
+        justify-content: center; 
+        align-items: center;    
+    }
+
+    .popup-content {
+        position: relative;
+        width: 100%; 
+        height: 100%; 
+        top: 0;
+        left: 0;
+        border-radius: 0; 
+        padding: 15px;
+    }
+
+    .close-popup-button {
+        font-size: 20px; /* Smaller close button */
+    }
+
+    .popup-logo {
+        font-size: 32px; 
+    }
+
+    .popup-text p {
+        font-size: 20px; /* Slightly smaller text */
     }
 }
 
