@@ -192,6 +192,33 @@
             </div>
         </div>
     </main>
+
+    <!-- Chatbot Popup -->
+    <div class="chatbot-overlay" id="chatbotOverlay">
+        <div class="chatbot-box">
+            <!-- Chatbot Header: Appears only on screen 393px and smaller-->
+            <header class="chatbot-header">
+                <button class="burger-menu" aria-label="Open menu">☰</button>
+                <h1 class="logo">FRAM</h1>
+                <div class="cart-icon" aria-label="Cart">0</div>
+            </header>
+
+            <!-- Chatbot Messages Section -->
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot-message">
+                    <span class="bot-name">FRAM</span>
+                    <div class="bot-text">What can I help you with today?</div>
+                </div>
+            </div>
+
+            <!-- Chatbot Footer -->
+            <div class="chatbot-footer">
+                <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Type your message...">
+                <button class="chatbot-send-button" id="sendMessage">↑</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
