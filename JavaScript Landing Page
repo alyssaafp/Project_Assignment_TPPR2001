@@ -22,6 +22,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Button Actions
+const browseButton = document.querySelector('.browse-button');
+browseButton.addEventListener('click', () => {
+    window.location.href = 'https://codepen.io/Alyssa-Andrino/full/gbYaPRW';
+});
+
+const chatButton = document.querySelector('.chat-button');
+const chatbotOverlay = document.getElementById('chatbotOverlay');
+
+// Show chatbot popup when the button is clicked
+chatButton.addEventListener('click', () => {
+    chatbotOverlay.style.display = 'flex'; // Display the popup
+});
+
+// Close chatbot popup when clicking outside the content
+chatbotOverlay.addEventListener('click', (e) => {
+    if (e.target === chatbotOverlay) {
+        chatbotOverlay.style.display = 'none'; // Hide the popup
+    }
+});
+
 // Carousel Functionality
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
