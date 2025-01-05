@@ -21,3 +21,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+// Form Validation
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('#contactForm');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    const firstName = document.querySelector('#firstName').value.trim();
+    const email = document.querySelector('#email').value.trim();
+    const message = document.querySelector('#form-message');
+
+    // Clear previous messages
+    message.textContent = "";
+
+    // Validate fields
+    if (firstName === '' || email === '') {
+      message.textContent = "Please fill in all fields.";
+      return;
+    }
+
+    // Email validation: check for '@' and '.'
+    if (!email.includes('@') || !email.includes('.')) {
+      message.textContent = "Please enter a valid email address.";
+      return;
+    }
+
+    // Success Message
+    message.textContent = "Thank you for signing up!";
+    message.style.color = "#FFFFFF";
+
+    // Reset form
+    form.reset();
+  });
+});
+
