@@ -22,6 +22,78 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Map Integration
+document.addEventListener("DOMContentLoaded", () => {
+    const placeholder = document.querySelector('.placeholder');
+    const mapContainer = document.getElementById('map');
+
+    // Always show the placeholder by default
+    if (placeholder) {
+        placeholder.style.display = 'flex'; // Make placeholder visible by default
+        placeholder.innerHTML = "<p>Use your API key to see the map.</p>";
+    }
+
+    // Check if the Google Maps API script is loaded correctly
+    if (typeof google === "undefined" || !google.maps) {
+        console.warn("Google Maps API failed to load or is not initialized. Placeholder will remain visible.");
+        return; // Stop further execution if API is not loaded
+    }
+
+    try {
+        // Define the location of the farm
+        const location = { lat: 60.30380894098004, lng: 10.63580064015733 };
+
+        // Initialize the map and center it on the location
+        const map = new google.maps.Map(mapContainer, {
+            zoom: 12,
+            center: location,
+        });
+
+        // Marker to point the farm location
+        const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: "Partnering Farm Location",
+        });
+
+        // Info window to display farm details
+        const infoWindow = new google.maps.InfoWindow({
+            content: "<h3>Braastad Gaard</h3><p>Oppdalslinna 242, 2740 Roa, Norway</p>",
+        });
+
+        // Show the info window when the marker is clicked
+        marker.addListener("click", () => {
+            infoWindow.open(map, marker);
+        });
+
+        // Open the info window automatically when the map loads
+        infoWindow.open(map, marker);
+
+        // Hide the placeholder since the map loaded successfully
+        if (placeholder) {
+            placeholder.style.display = 'none';
+        }
+    } catch (error) {
+        console.error("Error initializing the Google Map:", error);
+
+        // Ensure placeholder is visible in case of an error
+        if (placeholder) {
+            placeholder.style.display = 'flex'; // Center placeholder if an error occurs
+            placeholder.innerHTML = "<p>Use your API key to see the map.</p>";
+        }
+    }
+});
+
+// Add a click event listener for the placeholder
+document.addEventListener("DOMContentLoaded", () => {
+    const placeholder = document.querySelector('.placeholder');
+    if (placeholder) {
+        placeholder.addEventListener("click", () => {
+            alert("See README instructions"); // Show alert when placeholder is clicked
+        });
+    }
+});
+
 
 // Form Validation
 document.addEventListener('DOMContentLoaded', function () {
