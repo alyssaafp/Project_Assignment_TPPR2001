@@ -98,6 +98,68 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Chatbot Functionality
+const chatbotInput = document.getElementById('chatbotInput');
+const chatbotMessages = document.getElementById('chatbotMessages');
+const sendMessageButton = document.getElementById('sendMessage');
+
+// Replace this with your actual API key
+const API_KEY = 'YOUR_API_KEY_HERE'; // Replace this with your API key
+const API_ENDPOINT = 'https://api.openai.com/v1/chat/completions'; // OpenAI API endpoint
+
+// Event listener for the send button
+sendMessageButton.addEventListener('click', () => {
+    const userMessage = chatbotInput.value.trim();
+
+    if (userMessage) {
+        // Add user message to the chat
+        const userMessageElement = document.createElement('div');
+        userMessageElement.classList.add('chatbot-message', 'user-message');
+        userMessageElement.textContent = userMessage;
+        chatbotMessages.appendChild(userMessageElement);
+        chatbotInput.value = ''; // Clear input field
+
+        // Check if API key is valid
+        if (API_KEY === 'YOUR_API_KEY_HERE') {
+            const errorElement = document.createElement('div');
+            errorElement.classList.add('chatbot-message', 'bot-message');
+            errorElement.textContent = 'Error: Please replace "YOUR_API_KEY_HERE" in Javascript with your own API key.';
+            chatbotMessages.appendChild(errorElement);
+            return;
+        }
+
+        // Send the user's message to the API
+        fetch(API_ENDPOINT, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${API_KEY}`,
+            },
+            body: JSON.stringify({
+                model: 'gpt-3.5-turbo',
+                messages: [{ role: 'user', content: userMessage }],
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Add bot response to the chat
+            const botMessage = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content
+                ? data.choices[0].message.content
+                : 'No response from AI.';
+            const botMessageElement = document.createElement('div');
+            botMessageElement.classList.add('chatbot-message', 'bot-message');
+            botMessageElement.textContent = botMessage;
+            chatbotMessages.appendChild(botMessageElement);
+        })
+        .catch(() => {
+            // Show error message
+            const errorElement = document.createElement('div');
+            errorElement.classList.add('chatbot-message', 'bot-message');
+            errorElement.textContent = 'Error: Unable to fetch response.';
+            chatbotMessages.appendChild(errorElement);
+        });
+    }
+});
 
 // Form Validation
 document.addEventListener('DOMContentLoaded', function () {
